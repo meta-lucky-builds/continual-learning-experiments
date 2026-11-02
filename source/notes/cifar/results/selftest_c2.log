@@ -1,0 +1,14 @@
+PASS K1 generalised learner (defaults) equals cifar.run_learner ER exactly
+PASS K2 promote/ewc=0 do not change the learner within a task
+PASS K3 mem default = 500
+PASS K3b mem sets the reservoir size 50 400
+PASS K4 causality {'m2c': 1}
+PASS K4 causality {'ewc': 10.0}
+PASS K5 m2c active, feasible (relative violation), trajectory differs from ER 140 2.522126550911751e-12 [12, 52, 54, 56, 47]
+PASS K6 QP KKT: feasible, mu>=0, complementary slackness
+PASS K7 margin Jacobian columns match float64 finite differences (relative max error) 2.520349339175253e-05
+PASS K2b promotion does not change the learner across a task boundary
+PASS K8 promoted version statistics count = buffer + later stream items 800.0
+PASS K9 epochs=2: stream predictions unchanged in task 1, about 2x the training images 39830 19910
+PASS K10 EWC penalty gradient
+SELFTEST ALL PASS
