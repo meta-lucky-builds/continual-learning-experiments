@@ -1,0 +1,28 @@
+E2 base (ER500, RC): {'ER+bc_buf': '52.4±0.8', 'RC-LDA': '54.0±0.5', 'MIX_half': '57.3±0.6', 'POE_half': '58.3±0.5', 'MIX_what_ahat': '58.7±0.4'}
+ER M=680: {'ER+bc_buf': '54.2±0.8', 'RC-LDA': '54.0±0.5', 'MIX_half': '58.7±0.4', 'POE_half': '59.3±0.3', 'MIX_what_ahat': '59.3±0.4'}
+R1 MIX_half[A] - ER+bc_buf[B]: +3.2 ± 0.5 (signs +5/-0) *
+ER500 + RCW: {'ER+bc_buf': '52.4±0.8', 'RC-LDA': '57.8±0.4', 'MIX_half': '59.4±0.5', 'POE_half': '60.1±0.4', 'MIX_what_ahat': '60.6±0.3'}
+R3 RC-LDA[A] - RC-LDA[B]: +3.8 ± 0.7 (signs +5/-0) *
+ER M=1200: {'ER+bc_buf': '58.2±0.8', 'RC-LDA': '54.0±0.5', 'MIX_half': '60.8±0.4', 'POE_half': '61.2±0.3', 'MIX_what_ahat': '61.4±0.3'}
+R2 MIX_half[A] - ER+bc_buf[B]: +1.2 ± 0.7 (signs +4/-1)
+R2 (streaming-valid mix) MIX_what_ahat[A] - ER+bc_buf[B]: +2.4 ± 0.8 (signs +4/-1)
+erp ER path with RC (streaming-valid arms): {'ER+bc_buf': '52.4±0.8', 'RC-LDA': '54.0±0.5', 'MIX_half': '57.3±0.6', 'POE_half': '58.3±0.5', 'MIX_what_ahat': '58.7±0.4'}
+promotion: {'ER+bc_buf': '52.4±0.8', 'RC-LDA': '54.0±0.5', 'P_last': '50.2±0.7', 'MIX_half': '57.3±0.6', 'MIX3': '57.9±0.6', 'BANK': '60.0±0.4', 'P0': '55.4±0.6', 'P1': '56.6±0.4', 'P2': '55.1±0.3', 'P3': '50.2±0.7'}
+S1 P_last[A] - RC-LDA[B]: -3.8 ± 1.1 (signs +0/-5) *
+S2 MIX3[A] - MIX_half[B]: +0.6 ± 0.4 (signs +4/-1)
+S3 BANK[A] - MIX_half[B]: +2.7 ± 0.5 (signs +5/-0) *
+ewc: {'ER+bc_buf': '53.1±0.6', 'RC-LDA': '54.0±0.5', 'MIX_half': '57.5±0.5', 'POE_half': '57.9±0.4', 'MIX_what_ahat': '57.8±0.4'}
+U ewc+bc vs ER+bc ER+bc_buf[A] - ER+bc_buf[B]: +0.7 ± 0.4 (signs +3/-2)
+U MIX(ewc,RC) vs MIX(ER,RC) MIX_half[A] - MIX_half[B]: +0.1 ± 0.2 (signs +4/-1)
+/mnt/attach/project-files/notes/cifar/analyze_e2.py:13: RuntimeWarning: invalid value encountered in divide
+  Q = np.zeros_like(P); Q[:, seen] = P[:, seen]; return Q / Q.sum(1, keepdims=True)
+m2c: {'ER+bc_buf': '26.3±1.4', 'RC-LDA': '54.0±0.5', 'MIX_half': '26.7±1.2', 'POE_half': '26.7±1.2', 'MIX_what_ahat': '53.9±0.5'}
+U m2c+bc vs ER+bc ER+bc_buf[A] - ER+bc_buf[B]: -26.1 ± 1.4 (signs +0/-5) *
+U MIX(m2c,RC) vs MIX(ER,RC) MIX_half[A] - MIX_half[B]: -30.7 ± 1.5 (signs +0/-5) *
+m2c2: {'ER+bc_buf': '39.7±1.0', 'RC-LDA': '54.0±0.5', 'MIX_half': '40.8±1.2', 'POE_half': '41.2±1.2', 'MIX_what_ahat': '54.3±0.5'}
+U m2c2+bc vs ER+bc ER+bc_buf[A] - ER+bc_buf[B]: -12.8 ± 1.1 (signs +0/-5) *
+U MIX(m2c2,RC) vs MIX(ER,RC) MIX_half[A] - MIX_half[B]: -16.5 ± 0.8 (signs +0/-5) *
+3 epochs: {'ER+bc_buf': '53.2±0.6', 'RC-LDA': '54.0±0.5', 'MIX_half': '58.0±0.3', 'POE_half': '59.4±0.4', 'MIX_what_ahat': '59.2±0.6'}
+V1 ER+bc_buf[A] - RC-LDA[B]: -0.9 ± 1.1 (signs +1/-4)
+V2 MIX_half[A] - best_single[B]: +3.3 ± 0.1 (signs +5/-0) *
+V3 ER+bc_buf[A] - ER+bc_buf[B]: +0.8 ± 0.4 (signs +4/-1)
