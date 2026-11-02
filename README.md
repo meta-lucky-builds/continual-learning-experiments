@@ -1,5 +1,7 @@
 # cl: every test run in the TOE project, and what each one taught us
 
+> **Second project in this repository.** The lifelong robot project (RoboJEPA, problems P1–P14) has its own test record in [`lifelong-robot/`](lifelong-robot/README.md): 10 tests (2026-10-17 to 10-23), the never-tested list and cross-test lessons.
+
 This repository records every experiment run in Lucky's TOE project (continual learning, memory and world models), up to 2026-11-02.
 
 For each test you get:
