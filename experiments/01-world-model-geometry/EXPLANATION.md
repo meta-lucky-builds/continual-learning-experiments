@@ -82,7 +82,7 @@ Shared by both models:
 | 1 | **Smoke test**: 60 training steps, seed 0 | The pipeline ran end to end in about 1 minute. B was already ahead (planning 0.55 vs 0.05), but 60 steps is meaningless for conclusions. It only showed the code worked. |
 | 2 | **First full launch**: seeds 0, 1 and 2 in parallel, 3,000 steps each | Seeds 1 and 2 finished. **Seed 0 crashed** while evaluating model A: `torch.linalg.solve: input matrix is singular`, inside the linear position/velocity probe. |
 | 3 | **Fix and rerun seed 0** | The probe was changed to float64 with ridge 1e-2 (it had been float32 with ridge 1e-3), and seed 0 was rerun. Seeds 1 and 2 were *not* rerun, so they used the old probe. Ridge regression with that tiny regulariser barely changes a well-conditioned fit, so the difference should be negligible. It is still a real inconsistency, and it is recorded here. |
-| 4 | **Code rebuild check** (2026-11-02) | The original `wmtest.py` was missing from the project files, so it was rebuilt from the session record. To prove the rebuild is the same code, seed 0 was rerun and its output compared with the original `result_seed0.json`. See §7. |
+| 4 | **Code rebuild check** (2026-11-02, stopped partway at Lucky's request) | The original `wmtest.py` was missing from the project files, so it was rebuilt from the session record and seed 0 was started again to compare against the original `result_seed0.json`. Lucky asked to stop all reruns, so it was killed during model A's training. Up to that point, the logged training losses at iterations 0, 500, 1000 and 1500 matched the original seed-0 log **exactly**. That is partial evidence that the rebuild is faithful, not a full check. All results in this folder are from the original 2026-10-23 runs. |
 
 **Why did seed 0 crash?** This is our best explanation, not verified. Model A's GRU state is 64-d and passes through `tanh`. In that seed, several hidden units were saturated or almost perfectly collinear across the test set. That made XᵀX numerically singular in float32, and ridge 1e-3 was too small to rescue it. It is a measurement bug, not a model result, but it hints that model A's state is poorly conditioned.
 
@@ -133,7 +133,7 @@ These are hypotheses consistent with the numbers, not demonstrated.
   - T\*Q vs TQ, which are identical at unit mass;
   - coupling between the physics module and the recurrent state;
   - Fisher-geometry learning updates.
-- **Code provenance.** `wmtest.py` in this folder was rebuilt from the session record on 2026-11-02, because the original file was no longer in the project files. One edit: results are now written to the current folder instead of the original absolute path. The verification run is described in the commit that adds the verification note.
+- **Code provenance.** `wmtest.py` in this folder was rebuilt from the session record on 2026-11-02, because the original file was no longer in the project files. One edit: results are now written to the current folder instead of the original absolute path. The partial verification is described in §3, row 4.
 
 ## 8. What we would run next (proposed, never run)
 
