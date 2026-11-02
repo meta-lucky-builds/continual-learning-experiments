@@ -1,0 +1,11 @@
+{
+ "body_params": 93696,
+ "stat_floats": 182628,
+ "bytes_per_version": 1105296,
+ "versions": 19,
+ "bank_bytes": 21000624,
+ "bytes_per_image": 3072,
+ "B_img": 6836,
+ "M_match": 8836,
+ "note": "a version needs its encoder body (the head is unused by its LDA) plus float32 symmetric second moment, class sums and counts"
+}
