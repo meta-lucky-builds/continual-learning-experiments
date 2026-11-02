@@ -1,0 +1,19 @@
+DONE A4_dense_end seed2 acc=1.0000 rebind=0.0194 probe=[0.0179443359375, 1.0] s=2980.9
+DONE A4_dense_end seed3 acc=1.0000 rebind=0.0179 probe=[0.0177001953125, 1.0] s=2983.6
+DONE A4_dense_end seed1 acc=1.0000 rebind=0.0195 probe=[0.0185546875, 1.0] s=2994.4
+DONE A4_dense_end seed0 acc=1.0000 rebind=0.0179 probe=[0.0194091796875, 1.0] s=2999.8
+DONE A4_dense_end seed5 acc=1.0000 rebind=0.0172 probe=[0.017822265625, 1.0] s=2939.2
+DONE A4_dense_end seed4 acc=1.0000 rebind=0.0193 probe=[0.9986572265625, 1.0] s=2943.6
+DONE A4_dense_end seed7 acc=1.0000 rebind=0.0208 probe=[0.018798828125, 0.9967041015625] s=2935.3
+DONE A4_dense_end seed6 acc=1.0000 rebind=0.0186 probe=[0.018310546875, 1.0] s=2961.3
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed3.json
+SKIPSKIP  /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed5.json
+/mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed6.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A4_dense_end_seed7.json
+DONE A4_dense_end seed8 acc=0.2051 rebind=0.0238 probe=[0.019287109375, 0.1644287109375] s=1729.0
+DONE A4_dense_end seed9 acc=0.9999 rebind=0.0168 probe=[0.01953125, 0.99951171875] s=1732.2
+STAGE2_FINISHED
