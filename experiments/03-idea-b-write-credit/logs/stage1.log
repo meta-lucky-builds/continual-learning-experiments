@@ -1,0 +1,91 @@
+DONE A1_dense seed0 acc=0.0170 rebind=0.0170 probe=None s=2421.4
+DONE A2_dense_curric seed0 acc=0.9569 rebind=0.0212 probe=None s=2432.8
+DONE A1_dense seed1 acc=0.0186 rebind=0.0186 probe=None s=2436.6
+DONE A3_dense_local seed0 acc=1.0000 rebind=0.0179 probe=[1.0, 1.0] s=2928.8
+DONE A2_dense_curric seed1 acc=0.9163 rebind=0.0227 probe=None s=2577.6
+DONE A1_dense seed2 acc=0.0225 rebind=0.0225 probe=None s=2569.4
+DONE A2_dense_curric seed2 acc=0.9988 rebind=0.0197 probe=None s=2567.6
+DONE A3_dense_local seed1 acc=1.0000 rebind=0.0195 probe=[1.0, 1.0] s=3103.5
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed1.json
+SKIPSKIP  /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed0.json/mnt/project-files/idea-b-write-credit/results/A1_dense_seed0.json
+
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed2.json
+DONE A1_dense seed3 acc=1.0000 rebind=0.0179 probe=None s=454.5
+DONE A3_dense_local seed2 acc=1.0000 rebind=0.0194 probe=[1.0, 1.0] s=1071.1
+DONE A2_dense_curric seed3 acc=1.0000 rebind=0.0179 probe=None s=1103.9
+DONE A3_dense_local seed3 acc=1.0000 rebind=0.0179 probe=[1.0, 1.0] s=1627.0
+DONE A1_dense seed4 acc=0.0179 rebind=0.0179 probe=None s=2629.6
+DONE A2_dense_curric seed4 acc=0.0996 rebind=0.0903 probe=None s=2619.8
+DONE A1_dense seed5 acc=0.0193 rebind=0.0193 probe=None s=2595.6
+DONE A3_dense_local seed4 acc=1.0000 rebind=0.0193 probe=[1.0, 1.0] s=3157.4
+DONE A2_dense_curric seed5 acc=0.9957 rebind=0.0171 probe=None s=2582.2
+DONE A1_dense seed6 acc=0.0199 rebind=0.0199 probe=None s=2562.5
+DONE A3_dense_local seed5 acc=1.0000 rebind=0.0172 probe=[1.0, 0.9998779296875] s=3097.3
+DONE A2_dense_curric seed6 acc=0.7950 rebind=0.0195 probe=None s=2548.7
+SKIP SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed0.jsonSKIP
+/mnt/project-files/idea-b-write-credit/results/A1_dense_seed1.json
+ /mnt/project-files/idea-b-write-credit/results/A1_dense_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed6.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed6.json
+DONE A3_dense_local seed6 acc=1.0000 rebind=0.0186 probe=[1.0, 1.0] s=1818.4
+DONE A2_dense_curric seed7 acc=0.2855 rebind=0.0336 probe=None s=2330.2
+DONE A1_dense seed7 acc=0.0176 rebind=0.0176 probe=None s=2346.5
+DONE A3_dense_local seed7 acc=1.0000 rebind=0.0208 probe=[1.0, 1.0] s=2830.9
+DONE A1_dense seed8 acc=0.0197 rebind=0.0197 probe=None s=2537.5
+DONE A2_dense_curric seed8 acc=0.5532 rebind=0.0372 probe=None s=2514.5
+DONE A1_dense seed9 acc=0.0165 rebind=0.0165 probe=None s=2507.0
+DONE A3_dense_local seed8 acc=1.0000 rebind=0.0184 probe=[1.0, 1.0] s=3066.4
+DONE A2_dense_curric seed9 acc=0.9751 rebind=0.0182 probe=None s=2508.3
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed0.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed1.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed3.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed2.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed4.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed6.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed5.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed6.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed7.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed7.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed7.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed6.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed8.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A3_dense_local_seed8.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed8.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A1_dense_seed9.json
+SKIP /mnt/project-files/idea-b-write-credit/results/A2_dense_curric_seed9.json
+DONE A3_dense_local seed9 acc=1.0000 rebind=0.0168 probe=[1.0, 1.0] s=752.5
+DONE A0_naive seed0 acc=0.0181 rebind=0.0181 probe=None s=828.9
+DONE A0_naive seed1 acc=0.0220 rebind=0.0220 probe=None s=833.3
+DONE A0_naive seed2 acc=0.0127 rebind=0.0127 probe=None s=2253.3
+STAGE1_FINISHED
