@@ -1,0 +1,25 @@
+PASS Z1a sleep=0 equals cifar.run_learner ER exactly
+PASS Z1b sleep=1: identical to ER through task 2, one sleep at t=1, differs afterwards
+PASS Z10 determinism with sleep
+PASS Z9 causality after a sleep (label flip)
+PASS Z9b mix dreams: first sleep and predictions before the flip identical; the second sleep (after it) differs
+PASS Z14 task ends: task 1 = ER; at the first sleep T_* = ER exactly, saved student logits differ
+PASS Z14b npz holds e1_T_* keys (and none for task 1)
+PASS Z12 reserve disjoint from the buffer (and so from buf/mix dreams)
+PASS Z2 dep=0: net := S exactly (reset of the fast update)
+PASS Z3a teacher = the net before sleep, unchanged by distillation
+PASS Z4 rank-4 expert: every weight change has rank <= 4 (and = 4 somewhere) {'body.0.weight': 4, 'body.4.weight': 4, 'body.8.weight': 4, 'head.weight': 4}
+PASS Z3b slow weights updated to the merged student
+/mnt/attach/project-files/notes/cifar/sleep_selftest.py:68: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  chk(max(st['kl_first_batch_by_epoch']) < 1e-9 and max(float((p - S0[n]).abs().max()) for n, p in net.named_parameters()) < 1e-5, 'Z5 nothing to consolidate -> KL 0 and S unchanged', st['kl_first_batch_by_epoch'])
+PASS Z5 nothing to consolidate -> KL 0 and S unchanged [0.0, -6.5970358065214896e-09, -1.8001096169228958e-09]
+PASS Z6a full-rank distillation fits the teacher on its dreams 0.9850000143051147 0.010218961044438675 start 0.0 2.4700060472719025
+PASS Z6b leak detector (40-item sets): dreaming on the held-out set halves held-out KL; buffer arm shows a held-out gap buf (dream KL, held-out KL) (0.0011932614950338693, 0.032664558723535374) leak (0.07002111306931175, 0.0020750078327320346) v3 200-item case (0.9700000286102295, 0.9750000238418579, 0.012517287906607498, 0.018478777024114906)
+/mnt/attach/project-files/notes/cifar/sleep_selftest.py:110: RuntimeWarning: invalid value encountered in add
+  err = np.abs(lam * VI ** 2 + (1 - lam) * VJ ** 2 - m1) + np.abs(lam * VI ** 3 + (1 - lam) * VJ ** 3 - m2)
+PASS Z7 mix dreams (recovered from the images): every dream is an exact convex pair of different-label buffer items; max(lam, 1-lam) has mean ~0.75 as for lam ~ U(0,1) 0.76 200
+PASS Z8 noise dreams independent of the data
+PASS Z11 agreement metric (seen-masked argmax, full KL) 0.5 2.627677384847851
+PASS Z13 run(width=64) builds and evaluates a 1024-d net
+SELFTEST ALL PASS
