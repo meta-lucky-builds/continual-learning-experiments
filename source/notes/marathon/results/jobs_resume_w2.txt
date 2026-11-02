@@ -1,0 +1,5 @@
+W_er__mnist	{"data": "mnist", "floors": true, "stats": true, "stats2": true, "drift": true, "interf": true, "la": true, "sleep": true, "readouts": true}
+W_ace_start__mnist	{"data": "mnist", "floors": true, "stats": true, "stats2": true, "drift": true, "interf": true, "la": true, "sleep": true, "readouts": true, "buf": "start", "loss": "ace"}
+W_er_nmem50__mnist	{"data": "mnist", "nmem": 50, "stats": true, "stats2": true, "drift": true, "la": true}
+C_er__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4], "cyc": true}
+C_ace_start__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4], "cyc": true, "buf": "start", "loss": "ace"}
