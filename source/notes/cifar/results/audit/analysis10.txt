@@ -1,0 +1,6 @@
+GATES PASS: configs; bit-identical to E2 ER through task 2; max |merged - teacher| logit over all sleeps = 3.81e-06 (<= 1e-4)
+ER         exact-transfer 42.6 ± 1.7   ER 42.6 ± 1.6   full-rank distilled 41.1 ± 1.8
+ER+bc_buf  exact-transfer 52.2 ± 0.9   ER 52.4 ± 0.8   full-rank distilled 44.0 ± 0.4
+MIX_half   exact-transfer 57.3 ± 0.6   ER 57.3 ± 0.6   full-rank distilled 53.5 ± 0.3
+H1  exact+bc - ER+bc: -0.2 ± 0.1 (signs +1/-4)
+     full-rank distilled+bc - exact+bc: -8.2 ± 0.5 (signs +0/-5) *
