@@ -1,0 +1,7 @@
+PASS X1 EWC: identical to ER through task 1 and the first task-2 batch, differs afterwards
+PASS X1b EWC causality after the Fisher exists
+PASS X2 promoted version = learner at promotion, unchanged after; learner moved on
+PASS X3 version stats = 500 buffer items of task-1 classes + later stream batches (exact subtraction)
+PASS X4 first-pass label list aligns with task items (as used for extra epochs)
+PASS X5 epochs=3: same task-1 stream predictions, different task-2 predictions (extra passes took effect)
+CHECKS ALL PASS
