@@ -1,0 +1,5 @@
+{"cfg": {"data": "mnist", "ewc": "stale", "lam": 0.1}, "seed": 0, "curve": [], "probe_curve": [], "ret": null, "acc": 0.5134355030953884, "old_acc": 0.39748049806803465, "last_acc": 0.9772555232048035, "buf_size": 50, "sec": 24}
+{"cfg": {"data": "mnist", "ewc": "stale", "lam": 0.1}, "seed": 1, "curve": [], "probe_curve": [], "ret": null, "acc": 0.5416813120245934, "old_acc": 0.4328404199331999, "last_acc": 0.9770448803901672, "buf_size": 50, "sec": 19}
+{"cfg": {"data": "mnist", "ewc": "stale", "lam": 0.1}, "seed": 2, "curve": [], "probe_curve": [], "ret": null, "acc": 0.5130267232656479, "old_acc": 0.3970845080912113, "last_acc": 0.9767955839633942, "buf_size": 50, "sec": 19}
+{"cfg": {"data": "mnist", "ewc": "stale", "lam": 0.1}, "seed": 3, "curve": [], "probe_curve": [], "ret": null, "acc": 0.5712093010544776, "old_acc": 0.4698127303272486, "last_acc": 0.9767955839633942, "buf_size": 50, "sec": 18}
+{"cfg": {"data": "mnist", "ewc": "stale", "lam": 0.1}, "seed": 4, "curve": [], "probe_curve": [], "ret": null, "acc": 0.5061355456709862, "old_acc": 0.3885142859071493, "last_acc": 0.9766205847263336, "buf_size": 50, "sec": 18}
