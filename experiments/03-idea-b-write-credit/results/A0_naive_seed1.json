@@ -1,0 +1,91 @@
+{
+ "seed": 1,
+ "aux_mode": "none",
+ "aux_weight": 1.0,
+ "curriculum": false,
+ "n_queries": 1,
+ "seq_len": 64,
+ "pairs": 4,
+ "d_model": 32,
+ "layers": 2,
+ "direction": "forward",
+ "steps": 3000,
+ "lr": 0.001,
+ "batch": 256,
+ "params_model": 49508,
+ "final_task_loss": 7.975128173828125,
+ "eval_accuracy": 0.02197265625,
+ "rebind_accuracy": 0.02197265625,
+ "eval_samples": 2048,
+ "probe_end_accuracy": null,
+ "value_marginal_floor": 0.01852,
+ "curve": [
+  {
+   "step": 0,
+   "task_loss": 32.6745,
+   "aux_loss": null
+  },
+  {
+   "step": 250,
+   "task_loss": 8.0583,
+   "aux_loss": null
+  },
+  {
+   "step": 500,
+   "task_loss": 7.9876,
+   "aux_loss": null
+  },
+  {
+   "step": 750,
+   "task_loss": 8.0307,
+   "aux_loss": null
+  },
+  {
+   "step": 1000,
+   "task_loss": 7.9929,
+   "aux_loss": null
+  },
+  {
+   "step": 1250,
+   "task_loss": 7.9907,
+   "aux_loss": null
+  },
+  {
+   "step": 1500,
+   "task_loss": 8.0292,
+   "aux_loss": null
+  },
+  {
+   "step": 1750,
+   "task_loss": 7.9847,
+   "aux_loss": null
+  },
+  {
+   "step": 2000,
+   "task_loss": 8.0028,
+   "aux_loss": null
+  },
+  {
+   "step": 2250,
+   "task_loss": 8.0022,
+   "aux_loss": null
+  },
+  {
+   "step": 2500,
+   "task_loss": 7.9606,
+   "aux_loss": null
+  },
+  {
+   "step": 2750,
+   "task_loss": 7.9713,
+   "aux_loss": null
+  },
+  {
+   "step": 2999,
+   "task_loss": 7.9751,
+   "aux_loss": null
+  }
+ ],
+ "seconds": 833.3,
+ "arm": "A0_naive"
+}
