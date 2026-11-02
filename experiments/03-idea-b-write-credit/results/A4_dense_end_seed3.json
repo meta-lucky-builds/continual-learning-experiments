@@ -1,0 +1,94 @@
+{
+ "seed": 3,
+ "aux_mode": "end",
+ "aux_weight": 1.0,
+ "curriculum": false,
+ "n_queries": 4,
+ "seq_len": 64,
+ "pairs": 4,
+ "d_model": 32,
+ "layers": 2,
+ "direction": "forward",
+ "steps": 3000,
+ "lr": 0.001,
+ "batch": 256,
+ "params_model": 49508,
+ "final_task_loss": 0.0006832487997598946,
+ "eval_accuracy": 1.0,
+ "rebind_accuracy": 0.0179443359375,
+ "eval_samples": 8192,
+ "probe_end_accuracy": [
+  0.0177001953125,
+  1.0
+ ],
+ "value_marginal_floor": 0.01852,
+ "curve": [
+  {
+   "step": 0,
+   "task_loss": 28.5009,
+   "aux_loss": 4.1661
+  },
+  {
+   "step": 250,
+   "task_loss": 7.9909,
+   "aux_loss": 3.9942
+  },
+  {
+   "step": 500,
+   "task_loss": 7.9378,
+   "aux_loss": 3.9914
+  },
+  {
+   "step": 750,
+   "task_loss": 6.9991,
+   "aux_loss": 3.6419
+  },
+  {
+   "step": 1000,
+   "task_loss": 5.2772,
+   "aux_loss": 3.2388
+  },
+  {
+   "step": 1250,
+   "task_loss": 0.0199,
+   "aux_loss": 2.0536
+  },
+  {
+   "step": 1500,
+   "task_loss": 0.0028,
+   "aux_loss": 2.001
+  },
+  {
+   "step": 1750,
+   "task_loss": 0.0016,
+   "aux_loss": 1.9971
+  },
+  {
+   "step": 2000,
+   "task_loss": 0.0011,
+   "aux_loss": 1.9967
+  },
+  {
+   "step": 2250,
+   "task_loss": 0.0008,
+   "aux_loss": 1.9972
+  },
+  {
+   "step": 2500,
+   "task_loss": 0.0008,
+   "aux_loss": 1.996
+  },
+  {
+   "step": 2750,
+   "task_loss": 0.0007,
+   "aux_loss": 1.9956
+  },
+  {
+   "step": 2999,
+   "task_loss": 0.0007,
+   "aux_loss": 1.9956
+  }
+ ],
+ "seconds": 2983.6,
+ "arm": "A4_dense_end"
+}
