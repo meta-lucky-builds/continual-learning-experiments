@@ -77,3 +77,7 @@ These were analysis or writing, with no experiment run:
 - the memory literature searches;
 - the field-document review;
 - the step-1 research prompt (`memory-field-doc/step1_prompt.md` in the project files).
+
+## fristonx test record
+
+Every test from the fristonx design work, one file each: [tests/README.md](tests/README.md).
