@@ -1,0 +1,2 @@
+er {'mean': 0.4152, 'per_seed': [0.3805, 0.4805, 0.371, 0.42, 0.424], 'replay_buffer_acc': 0.948, 'sec': 7}
+er_cm {'mean': 0.4488, 'per_seed': [0.4355, 0.5185, 0.4115, 0.4535, 0.425], 'replay_buffer_acc': 0.996, 'sec': 6}
