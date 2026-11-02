@@ -1,0 +1,55 @@
+GATES PASS: configs as declared; every sleep arm bit-identical to E2 ER through task 2 (stream predictions, task-1 logits, the teacher at the first sleep)
+
+Final accuracy (%), mean ± SE over 5 seeds
+arm                       raw      +bc_buf   +bc(a-hat)  MIX_half(.,RC)     MIX(w,a)
+ER (E2)            42.6 ± 1.6   52.4 ± 0.8   54.7 ± 0.7      57.3 ± 0.6   58.7 ± 0.4
+slp_r16_buf        40.0 ± 2.6   44.0 ± 2.0   45.0 ± 2.2      54.0 ± 0.9   54.9 ± 0.7
+slp_r4_buf         39.3 ± 1.4   44.6 ± 0.6   45.2 ± 0.7      54.1 ± 0.6   54.7 ± 0.5
+slp_full_buf       41.1 ± 1.8   44.0 ± 0.4   46.8 ± 0.5      53.5 ± 0.3   55.5 ± 0.2
+slp_full_mix       39.2 ± 0.8   44.0 ± 0.7   45.7 ± 0.7      53.8 ± 0.3   54.9 ± 0.3
+slp_full_noise     11.7 ± 1.7   13.3 ± 1.9   13.2 ± 1.8      53.7 ± 0.6   54.0 ± 0.5
+erw                42.3 ± 2.5   53.8 ± 0.8   56.2 ± 0.7      58.3 ± 0.4   59.4 ± 0.5
+  slp_r16_buf: teacher before the final sleep, +bc_buf: 47.1 ± 1.5
+  slp_r4_buf: teacher before the final sleep, +bc_buf: 47.9 ± 0.5
+  slp_full_buf: teacher before the final sleep, +bc_buf: 46.5 ± 0.4
+  slp_full_mix: teacher before the final sleep, +bc_buf: 46.4 ± 0.6
+  slp_full_noise: teacher before the final sleep, +bc_buf: 28.0 ± 4.2
+
+Pre-declared comparisons
+T1     slp_r16_buf+bc - ER+bc: -8.4 ± 2.8 (signs +0/-5) *
+T1b    slp_full_buf+bc - ER+bc: -8.4 ± 0.5 (signs +0/-5) *
+T1c    MIX_half(slp_r16,RC) - BANK: -6.0 ± 1.1 (signs +0/-5) *
+
+Per-sleep statistics, mean over the 4 sleeps, then mean ± SE over seeds
+slp_r16_buf     agree buf 85.0 ± 2.7  resv 78.4 ± 1.4  test 77.8 ± 1.1  gap 6.6 ± 1.7 (signs +5/5)  KL buf 0.115 resv 0.171  sleep cost -5.7 ± 1.8
+                expert params 23742 ranks {'body.0.weight': 16, 'body.4.weight': 16, 'body.8.weight': 16, 'head.weight': 10}; compute: ER imgs 99590, + student fwd/bwd 60000, + teacher fwd 60000; sleep time 94 s
+slp_r4_buf      agree buf 82.4 ± 1.9  resv 76.1 ± 1.6  test 76.3 ± 1.9  gap 6.3 ± 1.3 (signs +5/5)  KL buf 0.157 resv 0.205  sleep cost -5.7 ± 1.6
+                expert params 7230 ranks {'body.0.weight': 4, 'body.4.weight': 4, 'body.8.weight': 4, 'head.weight': 4}; compute: ER imgs 99590, + student fwd/bwd 60000, + teacher fwd 60000; sleep time 95 s
+slp_full_buf    agree buf 93.0 ± 0.6  resv 84.5 ± 1.4  test 84.4 ± 0.8  gap 8.5 ± 1.9 (signs +5/5)  KL buf 0.039 resv 0.096  sleep cost -3.6 ± 0.2
+                expert params 98826 ranks {'body.0.weight': 'full', 'body.4.weight': 'full', 'body.8.weight': 'full', 'head.weight': 'full'}; compute: ER imgs 99590, + student fwd/bwd 60000, + teacher fwd 60000; sleep time 94 s
+slp_full_mix    agree buf 86.7 ± 0.4  resv 85.2 ± 1.0  test 85.5 ± 0.8  gap 1.5 ± 1.3 (signs +4/5)  KL buf 0.081 resv 0.084  sleep cost -3.8 ± 0.1
+                expert params 98826 ranks {'body.0.weight': 'full', 'body.4.weight': 'full', 'body.8.weight': 'full', 'head.weight': 'full'}; compute: ER imgs 99590, + student fwd/bwd 60000, + teacher fwd 60000; sleep time 95 s
+slp_full_noise  agree buf 38.6 ± 3.6  resv 38.5 ± 3.3  test 39.4 ± 3.4  gap 0.1 ± 1.7 (signs +3/5)  KL buf 1.195 resv 1.125  sleep cost -23.6 ± 1.2
+                expert params 98826 ranks {'body.0.weight': 'full', 'body.4.weight': 'full', 'body.8.weight': 'full', 'head.weight': 'full'}; compute: ER imgs 99590, + student fwd/bwd 60000, + teacher fwd 60000; sleep time 100 s
+T2  slp_r16_buf held-out gap 6.6 ± 1.7 LOSSY (pre-declared: mean > 5 points, 5/5 positive)
+T2  slp_r16_buf gap 6.6 ± 1.7 lossy
+T2  slp_r4_buf gap 6.3 ± 1.3 lossy
+T2  slp_full_buf gap 8.5 ± 1.9 lossy
+T2  slp_full_mix gap 1.5 ± 1.3 not lossy
+T2  slp_full_noise gap 0.1 ± 1.7 not lossy
+T2b    cost r4 - cost r16: +0.0 ± 0.4 (signs +3/-2)
+T2b    cost r16 - cost full: -2.1 ± 1.7 (signs +1/-4)
+T2b slp_r16_buf sleep cost -5.7 ± 1.8 (signs -5/5)
+T2b slp_r4_buf sleep cost -5.7 ± 1.6 (signs -5/5)
+T2b slp_full_buf sleep cost -3.6 ± 0.2 (signs -5/5)
+T2b slp_full_mix sleep cost -3.8 ± 0.1 (signs -5/5)
+T2b slp_full_noise sleep cost -23.6 ± 1.2 (signs -5/5)
+T3     agree_resv mix - buf: +0.7 ± 0.7 (signs +3/-2)
+T3     agree_resv noise - buf: -46.0 ± 2.7 (signs +0/-5) *
+T3     final mix+bc - buf+bc: +0.0 ± 0.6 (signs +2/-3)
+T3     final noise+bc - buf+bc: -30.6 ± 2.2 (signs +0/-5) *
+T4     ER+bc - erw raw: +10.1 ± 2.0 (signs +5/-0) *
+T4  pre-declared: ER+bc > erw raw by more than 5 points: True (mean 10.1)
+T4b    erw+bc - ER+bc: +1.4 ± 0.4 (signs +5/-0) *
+     raw: ER 42.6 ± 1.6  erw 42.3 ± 2.5 ; capacity gain raw -0.4 ± 1.2 ; bc gain at ER width 9.8 ± 1.5
+     erw compute: fwd/bwd imgs 99590 (same image count as ER; ~4x FLOPs per image at width 64), secs [430, 427, 417, 423, 413]
