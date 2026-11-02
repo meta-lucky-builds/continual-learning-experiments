@@ -1,0 +1,8 @@
+A_resv0__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "reserve": 0, "readouts": true}
+A_resv1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "reserve": 1, "readouts": true}
+A_resv2__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "reserve": 2, "readouts": true}
+A_resv3__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "reserve": 3, "readouts": true}
+A_resv0__mnist	{"data": "mnist", "reserve": 0, "readouts": true}
+A_resv1__mnist	{"data": "mnist", "reserve": 1, "readouts": true}
+A_resv2__mnist	{"data": "mnist", "reserve": 2, "readouts": true}
+A_resv3__mnist	{"data": "mnist", "reserve": 3, "readouts": true}
