@@ -1,0 +1,19 @@
+PASS C1 data shapes, per-class counts, pixel range [-2,2]
+PASS C2 stream: partition, task purity, reserve = first 5 per class, deterministic, seeds differ [[4, 8], [3, 5], [0, 9], [1, 2], [6, 7]]
+PASS C3 streaming LDA stats equal batch two-pass stats and are order-invariant 5.329070518200751e-15
+PASS C4 Cholesky LDA argmax equals marathon lda_predict on all 700 items
+PASS C5 planted 5-shot LDA ~100%, probs sum to 1, unseen mass = eps, empty = uniform 1.0
+PASS C6 causality er: prequential preds up to flipped batch identical, later ones change
+PASS C6 causality ace: prequential preds up to flipped batch identical, later ones change
+PASS C6 causality frozen: prequential preds up to flipped batch identical, later ones change
+PASS C6 causality rc expert
+PASS C7 determinism (rc expert, er learner)
+PASS C7b frozen learner equals ER before its freeze step (half of task-1 batches)
+PASS C8 Bayes mixture = direct loop (weights use items < t), regret <= log 2, identical -> same, dominated B -> A, prior 1/2 0.693147180559663
+PASS C8b direct-loop comparison detects an off-by-one (leaky) weight
+PASS C13 per-item true-label log-probs stored in float64, finite, match probs -487.3066496069954
+PASS C9 reservoir inclusion uniform (max |z| over 1000 items, corr with position) 3.205030767749697 0.004819700371806772
+PASS C10 ACE: zero gradient on absent-class logits
+PASS C11 balanced mean logit = marathon plain mean on balanced buffer; = mean of class means on imbalanced buffer
+PASS C12 seen-restricted accuracy on hand example
+SELFTEST ALL PASS
