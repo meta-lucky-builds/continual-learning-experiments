@@ -1,0 +1,5 @@
+T5_rows__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows"}
+T5_rows_wrong__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_wrong"}
+T5_rows_init__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_init"}
+T5_full_wrong__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "full_wrong"}
+T5_fresh__mnist	{"data": "mnist", "fresh": true}
