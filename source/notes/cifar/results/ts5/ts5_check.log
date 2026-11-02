@@ -1,0 +1,11 @@
+PASS T5a CIFAR-100 shapes and 500/100 per class
+PASS T5b seed 0: 20 disjoint tasks of 5 classes, 20 reserve/class, reserve never in a batch, batches in task order, 48,000 learning items
+PASS T5b seed 1: 20 disjoint tasks of 5 classes, 20 reserve/class, reserve never in a batch, batches in task order, 48,000 learning items
+PASS T5b seed 2: 20 disjoint tasks of 5 classes, 20 reserve/class, reserve never in a batch, batches in task order, 48,000 learning items
+PASS T5b seed 3: 20 disjoint tasks of 5 classes, 20 reserve/class, reserve never in a batch, batches in task order, 48,000 learning items
+PASS T5b seed 4: 20 disjoint tasks of 5 classes, 20 reserve/class, reserve never in a batch, batches in task order, 48,000 learning items
+PASS T5c erp smoke (K=100 head, buffer fills)
+PASS T5c er_mmatch smoke
+PASS T5c slp smoke
+PASS T5c rc smoke
+CHECKS ALL PASS
