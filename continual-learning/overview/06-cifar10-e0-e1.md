@@ -1,6 +1,6 @@
 # 06. CIFAR-10 round 1: E0 (is CIFAR a valid test?) and E1 (two-path test)
 
-**Source:** ewt.md §6. **Code (not uploaded):** `cifar.py` with self-tests C1–C13, a pre-declared `plan.md`, and an independent review.
+**Source:** [ewt.md](../source/notes/ewt.md) §6. **Code:** [`cifar.py`](../source/notes/cifar/cifar.py) with self-tests C1–C13, a pre-declared `plan.md`, and an independent review.
 
 ## Why we did it
 Toy and MNIST results do not transfer automatically. On MNIST, random features beat learned ones, which would make "feature learning" meaningless as a test. So the first question was whether real images separate learned features from random ones (E0). Only then could the two-path design be tested: plastic network plus stable statistics expert (E1).

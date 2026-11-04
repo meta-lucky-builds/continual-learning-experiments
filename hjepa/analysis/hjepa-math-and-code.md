@@ -1,12 +1,12 @@
 # H-JEPA: mathematics ↔ code reference
 
 Paper: *H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning* (arXiv 2610.06805v1), full text read from `h.txt` (all 3900 lines).
-Code: `github.com/kevinghst/H-JEPA` @ `97054ec`, at `/home/user/kevinghst/h-jepa`. Paths below are relative to that root; `h_jepa/` files are imported with `h_jepa/` on `sys.path`, so `import loss`, `from models.jepa import JEPA`, and so on.
+Code: `github.com/kevinghst/H-JEPA` @ `97054ec`, in a local checkout. Paths below are relative to that root; `h_jepa/` files are imported with `h_jepa/` on `sys.path`, so `import loss`, `from models.jepa import JEPA`, and so on.
 
 Conventions in this file:
 - `file:line` refers to the commit above.
 - **(inferred)** marks a statement I reasoned out rather than read directly in the paper or code.
-- **(verified)** marks a statement I checked by running code in `/home/user/venv311` on CPU.
+- **(verified)** marks a statement I checked by running code in a local venv on CPU.
 - The PDF-to-text extraction scrambles sub- and superscripts. Where an equation's indices were ambiguous in the extraction, I say so and give the code's exact semantics.
 
 ---

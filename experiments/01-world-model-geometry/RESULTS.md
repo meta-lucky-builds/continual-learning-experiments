@@ -7,7 +7,7 @@ Code: `wmtest.py` (run: `python3 wmtest.py <seed> 3000`). Raw numbers: `result_s
 - **A:** Euclidean GRU posterior and prior state (64-d), a diagonal Gaussian belief over the next observation, TQ heads (q, q̇) with a kinematic-consistency loss. 65k parameters.
 - **B:** a phase-space state (q, p ∈ R⁴ each), a control-affine dynamics prior with explicit PSD damping and symplectic Euler steps, a learned-gain filter (precision-weighted fusion), and a low-rank + diagonal belief. 59k parameters.
 
-## Results (mean ± std over 3 seeds)
+## Results (mean ± population std over 3 seeds)
 
 | Metric | A (table) | B (combination) |
 |---|---|---|

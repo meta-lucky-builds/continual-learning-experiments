@@ -1,6 +1,6 @@
 # 02. Toy test of M2c (the spec's protection mechanism)
 
-**Source:** ewt.md §2 (v1.3 A3). **Code (not uploaded):** `toy_cl3.py`.
+**Source:** [ewt.md](../source/notes/ewt.md) §2 (v1.3 A3). **Code:** [`toy_cl3.py`](../source/notes/v13-checks/toy_cl3.py).
 
 ## Why we did it
 M2c was the spec's lead anti-forgetting mechanism. It is a per-step projection that forbids first-order decreases of stored items' margins against their top rivals. It was the first claim about *learning* that could be tested. If protecting margins prevents forgetting, M2c should beat plain experience replay (ER).

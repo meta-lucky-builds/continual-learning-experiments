@@ -15,7 +15,7 @@
 | `results/*.json` | 43 per-seed results |
 | `logs/` | Run logs |
 
-**Licence note.** `hay.py` copies code from github.com/JIBSIL/dualgoose (MIT License, © 2026 Julian Boesch and Andrew Wee), as stated in its header. The scripts use absolute paths under `/mnt/project-files/idea-b-write-credit/`.
+**Licence note.** `hay.py` copies code from github.com/JIBSIL/dualgoose (MIT License, © 2026 Julian Boesch and Andrew Wee), as stated in its header. The scripts now resolve paths from their own folder; the original runs used `/mnt/project-files/idea-b-write-credit/`, which still appears in `logs/`.
 
 ## 1. Why we ran it
 
@@ -100,7 +100,7 @@ Lucky picked idea B and asked for a test that is *"as representative and accurat
 
 **Probe accuracy at the end of the sequence** (layer 1, layer 2):
 - A3: both layers at 1.0 on every seed.
-- A4: layer 1 at chance on 8/10 seeds, layer 2 at about 1.0.
+- A4: layer 1 at chance on 9/10 seeds (only seed 4 is above it), layer 2 at about 1.0 except seed 8 (0.164). The first write-up said 8/10; corrected against `results/A4_*.json`.
 
 ## 5. What we inferred
 
@@ -139,8 +139,7 @@ Lucky picked idea B and asked for a test that is *"as representative and accurat
 
 ```bash
 pip install torch numpy
-mkdir -p /mnt/project-files/idea-b-write-credit && cp -r . /mnt/project-files/idea-b-write-credit/
-cd /mnt/project-files/idea-b-write-credit
+# run from this folder
 git clone https://github.com/JIBSIL/dualgoose /tmp/dualgoose && python3 parity_test.py /tmp/dualgoose
 python3 resume_test.py
 bash run_stage1.sh && bash run_stage2.sh

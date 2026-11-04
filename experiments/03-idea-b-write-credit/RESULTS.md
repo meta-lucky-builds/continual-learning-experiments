@@ -17,11 +17,11 @@ A *lock-in* is evaluation accuracy > 0.8 at the maximum gap. Every lock-in below
 |---|---|---|
 | A0 naive (1 query) | 0/3 | 0.018, 0.022, 0.013 |
 | A1 dense (4 queries) | 1/10 | all ≈ 0.02 except seed 3 = 1.000 |
-| A2 dense + gap curriculum | 6/10 | 0.96, 0.92, 1.00, 1.00, 0.10, 1.00, 0.80, 0.29, 0.55, 0.98 |
+| A2 dense + gap curriculum | 6/10 | 0.96, 0.92, 1.00, 1.00, 0.10, 1.00, 0.795, 0.29, 0.55, 0.98 |
 | A3 dense + state probe at **every** step | **10/10** | all 1.000 |
 | A4 dense + state probe at the **last** step only | **9/10** | all 1.000 except seed 8 = 0.205 |
 
-**The controls reproduce the paper.** Dense alone gives 1/10 (paper: 1/10). The curriculum gives 6/10 (paper: 5/10 causal, 7/10 bidirectional). All validity checks V1–V3 pass.
+**The controls are consistent with the paper.** Dense alone gives 1/10 (paper: 1/10, for its bidirectional cell; it does not report the causal cell without curriculum). The curriculum gives 6/10 (paper: 5/10 causal, 7/10 bidirectional). All validity checks V1–V3 pass.
 
 ## Pre-registered verdict: idea B's mechanism is KILLED
 
@@ -47,7 +47,7 @@ The pre-registered rule for this pattern is **"A3 > A1 but not > A4: probe super
 2. **Locality does speed things up.** This is a weak, post-hoc observation, read from task-loss curves logged every 250 steps.
    - First logged step with task loss < 1: A3 hits it at step 500–750 on every seed. A4 hits it at 750–2250, and one seed never does.
    - So immediate credit buys speed, not lock-in.
-3. **Where the binding ends up.** In A4 the layer-1 probe stays at chance on 8/10 seeds, so the binding lives only in layer 2. In A3 both layers hold it. Local supervision forces storage into every layer it touches.
+3. **Where the binding ends up.** In A4 the layer-1 probe stays at chance on 9/10 seeds (only seed 4 is above it), so the binding lives only in layer 2 on those seeds. This originally read 8/10; corrected against `results/A4_*.json`. In A3 both layers hold it. Local supervision forces storage into every layer it touches.
 
 ## Limits
 

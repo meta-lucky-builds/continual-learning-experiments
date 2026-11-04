@@ -1,6 +1,6 @@
 # 09. Sleep-paper tests T-S1 to T-S4 (CIFAR-10)
 
-**Source:** ewt.md §9. Paper: Behrouz et al., "Language Models Need Sleep" (arXiv 2606.03979). **Code (not uploaded):** `sleep.py`, 20 self-tests, two review rounds.
+**Source:** [ewt.md](../source/notes/ewt.md) §9. Paper: Behrouz et al., "Language Models Need Sleep" (arXiv 2606.03979). **Code:** [`sleep.py`](../source/notes/cifar/sleep.py), 20 self-tests, two review rounds.
 
 ## Why we did it
 The paper proposes periodic "sleep": compress what the network learned into a new expert by distillation on self-generated "dreams", then reset fast weights. If that consolidation works, it is an alternative to the readout fixes. It also directly challenges our finding that forgetting is a readout problem.

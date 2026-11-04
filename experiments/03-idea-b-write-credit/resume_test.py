@@ -1,6 +1,6 @@
 """Resumed run must equal an uninterrupted run exactly (both a plain and an aux arm, with curriculum)."""
 import sys, tempfile, os, torch
-sys.path.insert(0, "/mnt/project-files/idea-b-write-credit"); import hay
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import hay
 torch.set_num_threads(4)
 for kw in (dict(n_queries=4, curriculum=True, aux_mode="none"), dict(n_queries=4, curriculum=False, aux_mode="local")):
     full = hay.run_trial(0, steps=12, batch=16, eval_batch=32, eval_iters=1, log_every=1, **kw)

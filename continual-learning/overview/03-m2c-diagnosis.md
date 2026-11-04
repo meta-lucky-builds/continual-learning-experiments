@@ -1,6 +1,6 @@
 # 03. Why M2c tied: the diagnosis
 
-**Source:** ewt.md §3 (A4). **Code (not uploaded):** `diag.py`, `why-m2c-failed.md`.
+**Source:** [ewt.md](../source/notes/ewt.md) §3 (A4). **Code:** [`diag.py`](../source/notes/v13-checks/diag.py), [`why-m2c-failed.md`](../source/notes/v13-checks/why-m2c-failed.md).
 
 ## Why we did it
 A null result is only useful if you know why it is null. Before redesigning anything, we wanted the mechanism. Was M2c weak, or was it protecting the wrong thing?

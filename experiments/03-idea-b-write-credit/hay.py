@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -423,7 +424,7 @@ def main():
     ap.add_argument("--seed", type=int, required=True)
     ap.add_argument("--steps", type=int, default=3000)
     ap.add_argument("--threads", type=int, default=1)
-    ap.add_argument("--out", default="/mnt/project-files/idea-b-write-credit/results")
+    ap.add_argument("--out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "results"))
     args = ap.parse_args()
     torch.set_num_threads(args.threads)
     out = Path(args.out) / f"{args.arm}_seed{args.seed}.json"

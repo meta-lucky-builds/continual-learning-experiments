@@ -10,12 +10,12 @@ This file reads files 01–10 as one body of evidence. Claims are tagged:
 | # | Test | Our idea | Strongest competitor in the race | Outcome |
 |---|---|---|---|---|
 | 01 | Test M | evidence-gated writes (e-values) | none (absolute bar) | FAILED: bad writes grew about linearly under misfit |
-| 02 | Test P | practice prior over edit directions | isotropic rank-one, full test-time training | UNCLEAR; condition (L) failed 0/20; margin over test-time training mostly from the rank-one form |
+| 02 | Test P | practice prior over edit directions | isotropic rank-one, full test-time training | UNCLEAR; condition (L) met in 0/20; margin over test-time training mostly from the rank-one form |
 | 03 | T-COMPOSE | compose known causes by inference | COIN snapshot library | FAILED: 1.30× COIN's error (bar ≤0.25×) |
 | 04 | T-CHURN | re-check after every write | LoRA + replay | FAILED on accuracy; writes now grow sub-linearly, but the pre-registered slope bar was met in only 1 of 3 misfit worlds |
 | 05 | T-P14 | learned practice prior Γ | Reptile, LoRA from scratch | FAILED: Γ on needed 1.30× the frames of Γ off |
 | 06 | cluster toys | L, C, M, S cores | per-cluster simple baselines | All four flattered by their own toys; L fatal |
-| 07 | T-CAUSE (pilot) | store causes (C, C_pub) | existing label-free stack cxl | cxl beat every C variant in every world (C_pub 2.3–5.6× worse at 200 frames); C_pub beat classic COIN in 3 worlds; 1–3 seeds, so no result is significant |
+| 07 | T-CAUSE (pilot) | store causes (C, C_pub) | existing label-free stack cxl | cxl beat every C variant in the decisive worlds (C_pub 2.3–3.7× worse at 200 frames; 5.6× in the w-site control); C_pub beat classic COIN in 3 worlds; 1–3 seeds, so no result is significant |
 | 08 | T-P14D (pilot) | p14v6 | adapters, PBML, heb, RMA | No arm showed full P14; ours below generic adapters |
 | 09 | p14v7 (pilot) | memory of errors | simpler twin, heb, adapters | Own kill test fired |
 | 10 | T-DORMANT | evidence-driven forgetting | no-forgetting RLS, cxl | KILLED (12 wins / 11 losses / 1 tie) |
@@ -32,8 +32,8 @@ This file reads files 01–10 as one body of evidence. Claims are tagged:
 
 ### Pattern A: the principle holds, the method loses [inferred, strong across tests]
 Several ideas were right *as statements about what a good learner must do*:
-- **Test M / T-CHURN.** Writing under a wrong base model must be re-checked, and once that was added, writes stopped growing linearly (sub-linear growth; the strict slope bar was still missed in 2 of 3 worlds) [checked].
-- **T-DORMANT.** Forgetting on a clock is ruinous: error went from 28 to 3283 as the idle gap grew [checked].
+- **Test M / T-CHURN.** Writing under a wrong base model must be re-checked, and once that was added, writes stopped growing linearly for merge_ref (sub-linear growth; the strict slope bar was still missed in 2 of 3 worlds; merge_noref stayed flagged linear at n = 2–4) [checked].
+- **T-DORMANT.** Forgetting on a clock is ruinous: error went from 28 to 3283 as the idle gap grew in the worst arm; other clock arms reached 399–498 [checked; diagnostics outside the pre-registered bar].
 - **The S audit.** Self-knowledge should audit your own committed forecasts [checked].
 
 But the method we built to carry each principle lost to a simpler method that respects the same principle for free:

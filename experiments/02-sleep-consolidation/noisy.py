@@ -1,8 +1,9 @@
 """Noisy repeats: every sighting uses a noisy key; queries use the clean key. count_gate and replay are given
 item identity (an advantage a real system would not have); slot rules use only per-slot address mass."""
-import sys, json, numpy as np
+import os, sys, json, numpy as np
 from multiprocessing import Pool
-sys.path.insert(0, '/mnt/project-files/memory-consolidation-test')
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 from pkmsleep import run, summarize
 CONDS = {'single': {}, 'single2N': {}, 'oracle': {}, 'count_gate': {}, 'copy_sel': {'tau': 0.4}, 'copy_soft': {'tau': 3.0}, 'replay': {}, 'replay_all': {}}
 SEEDS = [0, 1, 2, 3, 4]
@@ -15,7 +16,7 @@ if __name__ == '__main__':
     with Pool(4) as p: res = p.map(job, jobs)
     out = {}
     for nz, c, sd, s in res: out.setdefault(str(nz), {}).setdefault(c, {})[sd] = s
-    json.dump(out, open('/mnt/project-files/memory-consolidation-test/results_noisy.json', 'w'), indent=1)
+    json.dump(out, open(os.path.join(HERE, 'results_noisy.json'), 'w'), indent=1)
     for nz in out:
         print('== key noise', nz)
         for c in CONDS:

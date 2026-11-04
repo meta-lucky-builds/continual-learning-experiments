@@ -1,9 +1,9 @@
 # 17. Atlas test notebook: correctness checks with known answers
 
-**When:** 2026-10-30. **Files:** `notebooks/atlas_v2_tests.ipynb` and its sources in `src/v1/`. The same checks, extended, are in `src/v2b/`.
+**When:** 2026-10-30. **Files:** [`atlas/notebooks/atlas_v2_tests.ipynb`](../atlas/notebooks/atlas_v2_tests.ipynb) and its sources in [`atlas/src/v1/`](../atlas/src/v1/). The same checks, extended, are in [`atlas/src/v2b/`](../atlas/src/v2b/).
 
 ## Why we did it
-Lucky asked that the tests be run "accurately so the results are reliable, no mistake in the code of the test". There was no torch in our environment, the CIFAR hosts were blocked, and the original experiment code was never uploaded. So the analysis was written in plain numpy and **tested against synthetic data whose answers are known**, before any real data. The notebook re-runs every check in Colab and stops if any fails.
+Lucky asked that the tests be run "accurately so the results are reliable, no mistake in the code of the test". There was no torch in our environment, the CIFAR hosts were blocked, and the original experiment code was not available to this session. So the analysis was written in plain numpy and **tested against synthetic data whose answers are known**, before any real data. The notebook re-runs every check in Colab and stops if any fails.
 
 ## What we checked (all pass)
 **Library (`test_lib.py`):**

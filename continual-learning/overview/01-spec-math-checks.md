@@ -37,4 +37,4 @@ The spec's math was repaired. **Nothing here says whether the learner works.** T
 The spec had been written by composing pieces (Adam, K-FAC, CG) whose guarantees do not compose: a product of positive-definite matrices is not positive-definite in general, so descent breaks. N3 was wrong because the "damage" was measured on the very items that were constrained. Any constraint looks perfect on the items it constrains. This was the first appearance of the pattern behind I2 in [20-cross-test-insights.md](20-cross-test-insights.md): fitted-on items flatter you.
 
 ## Caveats
-A second reviewer of v1.3 found 20 more defects, including errors in N3 and N4. All were fixed. The scripts are not in this repository; the project never uploaded them.
+A second reviewer of v1.3 found 20 more defects, including errors in N3 and N4. All were fixed. The scripts are in [`source/notes/v12-checks/`](../source/notes/v12-checks/) and [`source/notes/v13-checks/`](../source/notes/v13-checks/).

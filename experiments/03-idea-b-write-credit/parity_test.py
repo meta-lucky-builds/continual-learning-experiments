@@ -3,11 +3,12 @@ code path does not change the forward computation.
 
 usage: python parity_test.py /path/to/dualgoose_repo
 """
+import os
 import sys
 
 import torch
 
-sys.path.insert(0, "/mnt/project-files/idea-b-write-credit")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hay  # noqa: E402
 
 repo = sys.argv[1]

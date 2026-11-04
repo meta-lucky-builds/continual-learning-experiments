@@ -8,7 +8,7 @@
 - `results.json`, `results_noisy.json` (raw numbers)
 - `RESULTS.md` (the original write-up from the day)
 
-The scripts contain absolute paths under `/mnt/project-files/memory-consolidation-test/`. Edit those, or create that folder, to rerun them.
+The scripts resolve paths from their own folder and overwrite the results files when rerun.
 
 ## 1. Why we ran it
 
@@ -122,7 +122,6 @@ The CL doc's principle 8, "use multiple timescales", was the overclaim: this toy
 
 ```bash
 pip install numpy
-mkdir -p /mnt/project-files/memory-consolidation-test && cp *.py /mnt/project-files/memory-consolidation-test/
 python3 main.py     # writes results.json
 python3 noisy.py    # writes results_noisy.json
 ```

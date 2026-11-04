@@ -1,7 +1,8 @@
 """Main runs. Hyperparameters tau were tuned on seed 100 (n_dis=40) only; test seeds 0-4."""
-import sys, json, numpy as np
+import os, sys, json, numpy as np
 from multiprocessing import Pool
-sys.path.insert(0, '/mnt/project-files/memory-consolidation-test')
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 from pkmsleep import run, summarize
 CONDS = {'single': {}, 'single2N': {}, 'oracle': {}, 'count_gate': {}, 'none': {},
          'copy_all': {}, 'copy_sel': {'tau': 0.4}, 'copy_soft': {'tau': 3.0}, 'replay': {}, 'replay_all': {}}
@@ -17,7 +18,7 @@ if __name__ == '__main__':
     with Pool(4) as p: res = p.map(job, jobs)
     out = {}
     for st, c, sd, s in res: out.setdefault(st, {}).setdefault(c, {})[sd] = s
-    json.dump(out, open('/mnt/project-files/memory-consolidation-test/results.json', 'w'), indent=1)
+    json.dump(out, open(os.path.join(HERE, 'results.json'), 'w'), indent=1)
     for st in SETTINGS:
         print('==', st)
         for c in CONDS:

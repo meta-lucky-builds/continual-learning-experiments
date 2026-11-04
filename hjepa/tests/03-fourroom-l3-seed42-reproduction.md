@@ -4,7 +4,7 @@
 **Where:** Google Colab, T4 GPU
 **Model:** released checkpoint `fourroom_hjepa_l3`, seed 42, from `jepa-world-models/h-jepa` on Hugging Face
 **Eval:** the repo's own `eval.py` with config `fourroom_l3`, 50 fixed tasks, unchanged paper planner settings, fp32
-**Status:** passed, matching the paper exactly
+**Status:** passed on one seed; the point estimate equals the paper's (a sanity check, see inference 2)
 
 ## Why we ran it
 

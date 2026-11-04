@@ -1,6 +1,6 @@
 # 04. The sharp-test marathon (toy + Split-MNIST)
 
-**Source:** ewt.md §4 (A5). **Code (not uploaded):** `mar.py`, `mar2.py`, self-tests S1–S11 and N1–N16, two independent reviews.
+**Source:** [ewt.md](../source/notes/ewt.md) §4 (A5). **Code:** [`mar.py`](../source/notes/marathon/mar.py), [`mar2.py`](../source/notes/marathon/mar2.py), self-tests S1–S11 and N1–N16, two independent reviews.
 
 ## Why we did it
 After 03 pointed at the readout, many separate claims of the spec and the literature could be tested cheaply, each with a sharp prediction:

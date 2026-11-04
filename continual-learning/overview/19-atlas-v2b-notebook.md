@@ -1,6 +1,6 @@
 # 19. Atlas tests v2b: designed, not yet run
 
-**When:** designed 2026-10-30. **Files:** `notebooks/atlas_v2b_tests.ipynb`, `src/v2b/`. **Status: no results yet.** Nothing below is a finding.
+**When:** designed 2026-10-30. **Files:** [`atlas/notebooks/atlas_v2b_tests.ipynb`](../atlas/notebooks/atlas_v2b_tests.ipynb), [`atlas/src/v2b/`](../atlas/src/v2b/). **Status: no results yet.** Nothing below is a finding.
 
 ## Why we designed it
 Each change answers a specific problem found in [18](18-atlas-v1-cifar100.md):

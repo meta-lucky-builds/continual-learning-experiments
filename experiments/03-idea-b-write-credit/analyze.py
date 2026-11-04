@@ -1,9 +1,10 @@
 """Tally lock-in per arm and apply the pre-registered decision rules (PREREGISTRATION.md)."""
 import glob
 import json
+import os
 from math import comb
 
-R = "/mnt/project-files/idea-b-write-credit/results"
+R = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
 rows = [json.load(open(f)) for f in sorted(glob.glob(R + "/*.json"))]
 arms = {}
 for r in rows:

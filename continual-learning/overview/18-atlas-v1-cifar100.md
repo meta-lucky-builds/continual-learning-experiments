@@ -1,6 +1,6 @@
 # 18. Atlas first tests on CIFAR-100 (notebook v1, run by Lucky on a Colab T4)
 
-**When:** 2026-10-30. **Files:** `notebooks/atlas_v2_tests.ipynb`, `src/v1/`. The full write-up is `RESULTS-v1.md` (project files).
+**When:** 2026-10-30. **Files:** [`atlas/notebooks/atlas_v2_tests.ipynb`](../atlas/notebooks/atlas_v2_tests.ipynb), [`atlas/src/v1/`](../atlas/src/v1/). The full write-up is [`atlas/RESULTS-v1.md`](../atlas/RESULTS-v1.md).
 
 ## Why we did it
 ARCH-v2 rests on two untested ideas:

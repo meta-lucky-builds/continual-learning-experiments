@@ -1,6 +1,6 @@
 #!/bin/bash
 # Stage 1 job queue: 4 parallel single-thread workers.
-cd /mnt/project-files/idea-b-write-credit
+cd "$(dirname "$0")"
 {
   for s in 0 1 2 3 4 5 6 7 8 9; do
     echo "A1_dense $s"; echo "A2_dense_curric $s"; echo "A3_dense_local $s"

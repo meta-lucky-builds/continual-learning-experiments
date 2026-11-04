@@ -1,6 +1,6 @@
 # 15. ARCH-v1 audit: deterministic counterexamples
 
-**When:** 2026-10-30, after the first Atlas architecture (ARCH-v1). **Files:** `design/audit-v1/check_architecture.py` and `architecture_checks.json` (Lucky's audit, supplied as files).
+**When:** 2026-10-30, after the first Atlas architecture (ARCH-v1). **Files:** `design/audit-v1/check_architecture.py` and `architecture_checks.json` (Lucky's audit, supplied as files; not in this repository).
 
 ## Why we did it
 ARCH-v1 made several claims about transporting class statistics between encoder versions, fusing evidence and combining experts. An external audit claimed some were false. A claim about math can be settled by a small counterexample, so the audit shipped a script with one counterexample per claim. We re-ran and checked each before accepting or rejecting it.

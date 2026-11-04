@@ -1,6 +1,6 @@
 # 16. Monte Carlo check of the stable-reference (GREG) estimator
 
-**When:** 2026-10-30, while answering the ARCH-v1 audit. **Source:** `design/AUDIT-RESPONSE-v1.md` §3.
+**When:** 2026-10-30, while answering the ARCH-v1 audit. **Source:** `design/AUDIT-RESPONSE-v1.md` §3 (not in this repository).
 
 ## Why we did it
 The audit proposed rebuilding each class's mean in a new encoder from a stable random chart r, where the class's mean is known exactly. We recognised this as the **regression estimator (GREG / control variate)** from survey sampling:

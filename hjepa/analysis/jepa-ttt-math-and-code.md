@@ -3,9 +3,9 @@
 Paper: "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts", Zhang, Ye, Agarwal, Nourkhiz Mahjoub, Moradi Pari, Khashabi, Shu, Tadiparthi (Honda Research Institute USA / JHU), 30 Sep 2026. No code released.
 
 Sources used:
-- Full paper text (32 pages, all appendices A1 to A7): `/tmp/claude-0/-home-user/86c58a48-3c38-5738-a1dd-42e931f4cf73/scratchpad/t.txt`
-- LeWorldModel code, cloned read-only (shallow, LFS skipped) to `/tmp/claude-0/lewm`. The files are `jepa.py`, `module.py`, `train.py`, `eval.py`, `utils.py` and `config/`.
-- H-JEPA repo at `/home/user/kevinghst/h-jepa` (commit `97054ec`).
+- Full paper text (32 pages, all appendices A1 to A7): a local text extract
+- LeWorldModel code, cloned read-only (shallow, LFS skipped) to a local checkout. The files are `jepa.py`, `module.py`, `train.py`, `eval.py`, `utils.py` and `config/`.
+- H-JEPA repo at a local checkout (commit `97054ec`).
 
 Convention: **(inferred)** marks anything the paper does not state. Line references are `file:line`. The paper contains no theory section, theorems or proofs. Its mathematics is Eqs. (1) to (4), the window definition in §3.4, the shift definitions (A5) to (A11), and the metric definitions.
 
@@ -516,7 +516,7 @@ Figures without tables: Fig. A1 (held-out curves for the 4 update rules) and Fig
 
 ## 8. Code mapping: θ, φ, ω in LeWM and H-JEPA level-1
 
-### 8.1 LeWM (`/tmp/claude-0/lewm`)
+### 8.1 LeWM
 
 | Paper | LeWM object | Definition | Notes |
 |---|---|---|---|
@@ -537,7 +537,7 @@ Figures without tables: Fig. A1 (held-out curves for the 4 update rules) and Fig
 
 θ parameter selection in LeWM: `list(m.action_encoder.parameters()) + list(m.predictor.parameters()) + list(m.pred_proj.parameters())`.
 
-### 8.2 H-JEPA level-1 (`/home/user/kevinghst/h-jepa/h_jepa`)
+### 8.2 H-JEPA level-1 (`h_jepa/`)
 
 The level-1 model is `world_model.get_level(1)`, which equals `world_model.jepas[0]` (`models/hjepa.py:39-49`). It is a `models.jepa.JEPA` built in `hjepa_utils.py:182-337`.
 
