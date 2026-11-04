@@ -1,4 +1,4 @@
-# cl: testing ideas about learning and memory until they break
+# Continual learning experiments: testing ideas about learning and memory until they break
 
 A research record of five related projects on one question: **how can a learning system keep improving without losing what it knows?** It covers continual learning, memory, world models and robot learning, and holds the tests, the raw results where they exist, and the failures.
 
