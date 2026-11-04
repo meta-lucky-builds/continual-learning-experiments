@@ -1,0 +1,22 @@
+gR PASS
+gS PASS
+gO PASS
+{"u": 1, "age": 18, "OLD": 0.764, "TRANS": 0.708, "REACT_1": 0.514, "BUF_1": 0.312, "REACT_5": 0.712, "BUF_5": 0.552, "REACT_all": 0.756, "BUF_all": 0.636}
+{"u": 2, "age": 17, "OLD": 0.76, "TRANS": 0.744, "REACT_1": 0.466, "BUF_1": 0.29, "REACT_5": 0.698, "BUF_5": 0.574, "REACT_all": 0.714, "BUF_all": 0.69}
+{"u": 3, "age": 16, "OLD": 0.72, "TRANS": 0.742, "REACT_1": 0.542, "BUF_1": 0.352, "REACT_5": 0.706, "BUF_5": 0.566, "REACT_all": 0.682, "BUF_all": 0.678}
+{"u": 4, "age": 15, "OLD": 0.754, "TRANS": 0.746, "REACT_1": 0.672, "BUF_1": 0.414, "REACT_5": 0.746, "BUF_5": 0.626, "REACT_all": 0.734, "BUF_all": 0.696}
+{"u": 5, "age": 14, "OLD": 0.864, "TRANS": 0.828, "REACT_1": 0.694, "BUF_1": 0.446, "REACT_5": 0.83, "BUF_5": 0.73, "REACT_all": 0.844, "BUF_all": 0.804}
+{"u": 6, "age": 13, "OLD": 0.87, "TRANS": 0.834, "REACT_1": 0.742, "BUF_1": 0.306, "REACT_5": 0.806, "BUF_5": 0.674, "REACT_all": 0.8, "BUF_all": 0.768}
+{"u": 7, "age": 12, "OLD": 0.712, "TRANS": 0.624, "REACT_1": 0.562, "BUF_1": 0.332, "REACT_5": 0.688, "BUF_5": 0.448, "REACT_all": 0.7, "BUF_all": 0.556}
+{"u": 8, "age": 11, "OLD": 0.784, "TRANS": 0.772, "REACT_1": 0.688, "BUF_1": 0.306, "REACT_5": 0.768, "BUF_5": 0.58, "REACT_all": 0.796, "BUF_all": 0.71}
+{"u": 9, "age": 10, "OLD": 0.89, "TRANS": 0.848, "REACT_1": 0.806, "BUF_1": 0.446, "REACT_5": 0.868, "BUF_5": 0.69, "REACT_all": 0.888, "BUF_all": 0.808}
+{"u": 10, "age": 9, "OLD": 0.806, "TRANS": 0.758, "REACT_1": 0.662, "BUF_1": 0.398, "REACT_5": 0.746, "BUF_5": 0.52, "REACT_all": 0.76, "BUF_all": 0.678}
+{"u": 11, "age": 8, "OLD": 0.722, "TRANS": 0.602, "REACT_1": 0.55, "BUF_1": 0.328, "REACT_5": 0.632, "BUF_5": 0.468, "REACT_all": 0.704, "BUF_all": 0.51}
+{"u": 12, "age": 7, "OLD": 0.742, "TRANS": 0.694, "REACT_1": 0.644, "BUF_1": 0.246, "REACT_5": 0.732, "BUF_5": 0.506, "REACT_all": 0.748, "BUF_all": 0.6}
+{"u": 13, "age": 6, "OLD": 0.856, "TRANS": 0.77, "REACT_1": 0.746, "BUF_1": 0.318, "REACT_5": 0.822, "BUF_5": 0.604, "REACT_all": 0.826, "BUF_all": 0.708}
+{"u": 14, "age": 5, "OLD": 0.85, "TRANS": 0.814, "REACT_1": 0.746, "BUF_1": 0.422, "REACT_5": 0.8, "BUF_5": 0.604, "REACT_all": 0.842, "BUF_all": 0.724}
+{"u": 15, "age": 4, "OLD": 0.824, "TRANS": 0.72, "REACT_1": 0.732, "BUF_1": 0.352, "REACT_5": 0.802, "BUF_5": 0.492, "REACT_all": 0.82, "BUF_all": 0.598}
+{"u": 16, "age": 3, "OLD": 0.836, "TRANS": 0.744, "REACT_1": 0.764, "BUF_1": 0.236, "REACT_5": 0.8, "BUF_5": 0.616, "REACT_all": 0.832, "BUF_all": 0.668}
+{"u": 17, "age": 2, "OLD": 0.736, "TRANS": 0.676, "REACT_1": 0.68, "BUF_1": 0.376, "REACT_5": 0.702, "BUF_5": 0.506, "REACT_all": 0.724, "BUF_all": 0.608}
+{"u": 18, "age": 1, "OLD": 0.878, "TRANS": 0.842, "REACT_1": 0.842, "BUF_1": 0.35, "REACT_5": 0.862, "BUF_5": 0.692, "REACT_all": 0.88, "BUF_all": 0.81}
+{"u": 19, "age": 0, "OLD": 0.794, "TRANS": 0.758, "REACT_1": 0.718, "BUF_1": 0.27, "REACT_5": 0.778, "BUF_5": 0.45, "REACT_all": 0.798, "BUF_all": 0.636}

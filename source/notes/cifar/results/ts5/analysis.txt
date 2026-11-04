@@ -1,0 +1,36 @@
+GATES PASS: configs as declared; same stream in every arm; sleep arm bit-identical to ER through task 2
+
+Final accuracy over 100 classes (%), mean ± SE
+  ER                     17.4 ± 0.4
+  ER+bc                  22.7 ± 0.2
+  RC                     28.2 ± 0.4
+  MIX_half               29.7 ± 0.2
+  BANK_all               31.0 ± 0.4
+  BANK_4last             28.0 ± 0.4
+  BANK_4spread           31.2 ± 0.3
+  ERmm+bc                25.9 ± 0.4
+  MIX_half(ERmm,RC)      30.1 ± 0.1
+  SLP+bc                 14.8 ± 0.4
+  SLP_teacher_final+bc   15.1 ± 0.3
+  MIX_half(SLP,RC)       28.2 ± 0.3
+
+Pre-declared comparisons
+G1   BANK_all - MIX_half: +1.4 ± 0.5 (signs +4/-1)
+G2   BANK_4last - BANK_all: -3.1 ± 0.2 (signs +0/-5) *
+G3   BANK_4spread - BANK_all: +0.2 ± 0.2 (signs +4/-1)
+     BANK_4last keeps -122% of the G1 gain
+     BANK_4spread keeps 113% of the G1 gain
+G4   BANK_all - MIX_half(ER M=8836, RC): +0.9 ± 0.4 (signs +4/-1)
+G4b  BANK_all - ER+bc(M=8836): +5.1 ± 0.3 (signs +5/-0) *
+G5   SLP+bc - ER+bc: -7.9 ± 0.3 (signs +0/-5) *
+
+Accuracy vs number of versions kept (most recent first): k, extra MB, mean acc
+  k= 0  +  0.0 MB  29.7
+  k= 1  +  1.1 MB  28.5
+  k= 2  +  2.2 MB  27.5
+  k= 4  +  4.4 MB  28.0
+  k= 8  +  8.8 MB  29.3
+  k=12  + 13.3 MB  30.3
+  k=19  + 21.0 MB  31.0
+Versions alone (LDA on each frozen encoder), mean over seeds: [26.0, 26.1, 26.8, 27.8, 28.5, 28.9, 29.4, 29.4, 29.5, 29.3, 29.3, 29.1, 28.7, 28.2, 27.6, 27.2, 26.3, 25.7, 24.9]
+Compute (secs): {'erp': [3061, 3050, 3082, 3065, 3038], 'er_mmatch': [517, 532, 521, 530, 512], 'slp': [2801, 2797, 2827, 2822, 2820]}

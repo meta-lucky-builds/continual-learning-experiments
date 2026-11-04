@@ -1,0 +1,6 @@
+F7_er_stats__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stats": true}
+F7_ace_stats__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stats": true, "loss": "ace", "buf": "start"}
+F7_er_stats__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "stats": true}
+F7_ace_stats__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "stats": true, "loss": "ace", "buf": "start"}
+F7_er_stats__mnist	{"data": "mnist", "stats": true}
+F7_ace_stats__mnist	{"data": "mnist", "stats": true, "loss": "ace", "buf": "start"}

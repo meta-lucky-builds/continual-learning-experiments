@@ -1,0 +1,8 @@
+F8_er_nmem5__toyA	{"data": "toy", "sep": 0.6, "rep": 4, "nmem": 5, "stats": true, "readouts": true}
+F8_er_nmem20__toyA	{"data": "toy", "sep": 0.6, "rep": 4, "nmem": 20, "stats": true, "readouts": true}
+F8_er_nmem50__toyA	{"data": "toy", "sep": 0.6, "rep": 4, "nmem": 50, "stats": true, "readouts": true}
+F8_er_nmem100__toyA	{"data": "toy", "sep": 0.6, "rep": 4, "nmem": 100, "stats": true, "readouts": true}
+F8_er_nmem5__mnist	{"data": "mnist", "rep": 4, "nmem": 5, "stats": true, "readouts": true}
+F8_er_nmem20__mnist	{"data": "mnist", "rep": 4, "nmem": 20, "stats": true, "readouts": true}
+F8_er_nmem50__mnist	{"data": "mnist", "rep": 4, "nmem": 50, "stats": true, "readouts": true}
+F8_er_nmem100__mnist	{"data": "mnist", "rep": 4, "nmem": 100, "stats": true, "readouts": true}

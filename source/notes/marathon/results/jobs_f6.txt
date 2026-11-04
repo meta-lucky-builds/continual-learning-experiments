@@ -1,0 +1,6 @@
+F6_center_ro__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "center", "mech": true, "readouts": true}
+F6_w9_mech__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "w": 9.0, "mech": true}
+F6_center_ro__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "center", "mech": true, "readouts": true}
+F6_w9_mech__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "w": 9.0, "mech": true}
+F6_center_ro__mnist	{"data": "mnist", "head": "center", "mech": true, "readouts": true}
+F6_w9_mech__mnist	{"data": "mnist", "w": 9.0, "mech": true}

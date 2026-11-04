@@ -1,0 +1,4 @@
+A_er_ck__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "la": true, "readouts": true, "save_model": "/mnt/project-files/notes/marathon/results/ckpt/er_toyA_{seed}.pt"}
+A_er_w4__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "w": 4.0, "la": true, "readouts": true}
+A_er_ck__mnist	{"data": "mnist", "la": true, "readouts": true, "save_model": "/mnt/project-files/notes/marathon/results/ckpt/er_mnist_{seed}.pt"}
+A_er_w4__mnist	{"data": "mnist", "w": 4.0, "la": true, "readouts": true}

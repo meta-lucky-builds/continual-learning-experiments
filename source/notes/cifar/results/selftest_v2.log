@@ -1,0 +1,3 @@
+PASS C11 balanced mean logit = marathon plain mean on balanced buffer; = mean of class means on imbalanced buffer
+PASS C12 seen-restricted accuracy on hand example
+SELFTEST ALL PASS

@@ -1,0 +1,37 @@
+O_full           35.30 ± 0.36
+O_mean           34.44 ± 0.33
+B_only           24.93 ± 0.21
+CH_shift         26.87 ± 0.16
+CH_cv            30.56 ± 0.17
+CH_cv_tr         30.79 ± 0.15
+CH_aff           30.50 ± 0.33
+DI_shift         24.27 ± 0.22
+DI_cv            30.24 ± 0.18
+DI_aff           31.61 ± 0.33
+ER+bc_buf        22.70 ± 0.18
+RC               28.17 ± 0.37
+BANK_4spread     31.21 ± 0.27
+MIX3_B_only      28.12 ± 0.31
+MIX3_CH_cv       32.08 ± 0.21
+MIX3_CH_shift    29.84 ± 0.17
+MIX2_CH_cv_RC    31.88 ± 0.21
+gB: ER+bc_buf 22.70 (want 22.7), BANK_4spread 31.21 (want 31.2), RC 28.17 (want 28.2)
+declared:
+  CH_cv - B_only: +5.63 ± 0.10 *
+  CH_aff - CH_cv: -0.06 ± 0.23 
+  CH_shift - CH_cv: -3.68 ± 0.22 *
+  MIX3_CH_cv - BANK_4spread: +0.86 ± 0.29 *
+  O_mean - B_only: +9.50 ± 0.23 *
+  O_full - O_mean: +0.87 ± 0.07 *
+  CH_cv_tr - CH_cv: +0.23 ± 0.02 *
+  gap closed CH_cv: 0.54
+  gap closed CH_cv_tr: 0.57
+  gap closed CH_aff: 0.54
+  gap closed CH_shift: 0.19
+  gap closed DI_cv: 0.51
+  gap closed DI_aff: 0.64
+exploratory (not declared):
+  DI_aff - DI_cv: +1.37 ± 0.17 *
+  DI_aff - CH_cv: +1.05 ± 0.20 *
+  MIX3_CH_cv - MIX3_B_only: +3.95 ± 0.21 *
+  CH_cv - BANK_4spread: -0.65 ± 0.20 

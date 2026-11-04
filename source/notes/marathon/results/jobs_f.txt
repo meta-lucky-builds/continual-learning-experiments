@@ -1,0 +1,18 @@
+F4_er_mech__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "mech": true}
+F5_center__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "center", "probe_curve": true}
+F5_cos__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "cos", "probe_curve": true}
+F5_cos_center__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "cos_center", "probe_curve": true}
+F5_center_w9__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "center", "w": 9.0}
+F5_center_ace_start__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "head": "center", "loss": "ace", "buf": "start"}
+F4_er_mech__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "mech": true}
+F5_center__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "center", "probe_curve": true}
+F5_cos__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "cos", "probe_curve": true}
+F5_cos_center__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "cos_center", "probe_curve": true}
+F5_center_w9__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "center", "w": 9.0}
+F5_center_ace_start__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "head": "center", "loss": "ace", "buf": "start"}
+F4_er_mech__mnist	{"data": "mnist", "mech": true}
+F5_center__mnist	{"data": "mnist", "head": "center", "probe_curve": true}
+F5_cos__mnist	{"data": "mnist", "head": "cos", "probe_curve": true}
+F5_cos_center__mnist	{"data": "mnist", "head": "cos_center", "probe_curve": true}
+F5_center_w9__mnist	{"data": "mnist", "head": "center", "w": 9.0}
+F5_center_ace_start__mnist	{"data": "mnist", "head": "center", "loss": "ace", "buf": "start"}

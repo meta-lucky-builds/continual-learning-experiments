@@ -1,0 +1,22 @@
+{
+ "seed": 3,
+ "acc": {
+  "O_full": 0.3619,
+  "O_mean": 0.353,
+  "B_only": 0.2559,
+  "CH_shift": 0.2666,
+  "CH_cv": 0.3095,
+  "CH_cv_tr": 0.3115,
+  "CH_aff": 0.3111,
+  "DI_shift": 0.2402,
+  "DI_cv": 0.3053,
+  "DI_aff": 0.3218,
+  "ER+bc_buf": 0.2312,
+  "RC": 0.281,
+  "BANK_4spread": 0.3163,
+  "MIX3_B_only": 0.2915,
+  "MIX3_CH_cv": 0.3235,
+  "MIX3_CH_shift": 0.2992,
+  "MIX2_CH_cv_RC": 0.3201
+ }
+}

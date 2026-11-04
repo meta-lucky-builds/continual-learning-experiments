@@ -1,0 +1,4 @@
+er {'mean': 0.4505, 'per_seed': [0.4575, 0.466, 0.428], 'replay_buffer_acc': 0.922, 'sec': 4}
+er_half {'mean': 0.3398, 'per_seed': [0.3315, 0.36, 0.328], 'replay_buffer_acc': 0.989, 'sec': 4}
+margin_split {'mean': 0.4235, 'per_seed': [0.3935, 0.462, 0.415], 'replay_buffer_acc': 0.967, 'sec': 1451}
+margin_qp {'mean': 0.4578, 'per_seed': [0.433, 0.5045, 0.436], 'replay_buffer_acc': 0.994, 'sec': 879}

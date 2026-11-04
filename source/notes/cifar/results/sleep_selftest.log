@@ -1,0 +1,28 @@
+PASS Z1a sleep=0 equals cifar.run_learner ER exactly
+/mnt/attach/project-files/notes/cifar/sleep.py:73: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  if a == 0: losses.append(float(loss))
+PASS Z1b sleep=1: identical to ER through task 2, one sleep at t=1, differs afterwards
+PASS Z10 determinism with sleep
+PASS Z9 causality after a sleep (label flip)
+PASS Z12 reserve disjoint from the buffer (and so from buf/mix dreams)
+PASS Z2 dep=0: net := S exactly (reset of the fast update)
+PASS Z3a teacher = the net before sleep, unchanged by distillation
+PASS Z4 rank-4 expert: every weight change has rank <= 4 (and = 4 somewhere) {'body.0.weight': 4, 'body.4.weight': 4, 'body.8.weight': 4, 'head.weight': 4}
+PASS Z3b slow weights updated to the merged student
+FAIL Z5 nothing to consolidate -> KL 0 and S unchanged [0.0, 0.03348344564437866, 0.006184533704072237]
+FAIL Z6a full-rank distillation fits the teacher on its dreams 0.7950000166893005 0.0012327061711393016 start 0.8899999856948853 0.0005937623382208945
+FAIL Z6b leak detector: dreams = reserve gives higher reserve agreement than buffer dreams 0.7400000095367432 0.8399999737739563
+PASS Z7 mix dreams: different-label pairs, lambda in [0,1], exact convex combination
+PASS Z8 noise dreams independent of the data
+Traceback (most recent call last):
+  File "/mnt/attach/project-files/notes/cifar/sleep_selftest.py", line 83, in <module>
+    if __name__ == '__main__': sys.exit(0 if main() else 1)
+                                             ~~~~^^
+  File "/mnt/attach/project-files/notes/cifar/sleep_selftest.py", line 76, in main
+    ag, kl = Z.agreement(Fix(Lt), Fix(Ls), Xi2, [0, 1])
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/attach/project-files/notes/cifar/sleep.py", line 84, in agreement
+    agree = float(((Lt + m).argmax(1) == (Ls + m).argmax(1)).float().mean())
+                    ~~~^~~
+RuntimeError: The size of tensor a (3) must match the size of tensor b (10) at non-singleton dimension 1

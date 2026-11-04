@@ -1,0 +1,5 @@
+FU5_none__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "none", "ret_bc": true}
+FU5_rows__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows", "ret_bc": true}
+FU5_rows_init__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_init", "ret_bc": true}
+FU5_full__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "full", "ret_bc": true}
+FUC_er__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4], "cyc": true, "ret_bc": true}

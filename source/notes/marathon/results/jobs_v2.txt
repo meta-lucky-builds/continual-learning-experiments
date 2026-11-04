@@ -1,0 +1,69 @@
+T2_er__mnist	{"data": "mnist", "readouts": true, "probe_curve": true}
+T2_er_start__mnist	{"data": "mnist", "buf": "start", "readouts": true}
+T2_ace_start__mnist	{"data": "mnist", "buf": "start", "loss": "ace", "readouts": true, "probe_curve": true}
+T2_w9__mnist	{"data": "mnist", "w": 9.0, "readouts": true}
+F4_er_mech__mnist	{"data": "mnist", "mech": true}
+F5_center__mnist	{"data": "mnist", "head": "center", "probe_curve": true}
+F5_cos__mnist	{"data": "mnist", "head": "cos", "probe_curve": true}
+F5_cos_center__mnist	{"data": "mnist", "head": "cos_center", "probe_curve": true}
+F5_center_w9__mnist	{"data": "mnist", "head": "center", "w": 9.0}
+F5_center_ace_start__mnist	{"data": "mnist", "head": "center", "loss": "ace", "buf": "start"}
+T3_er__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "probe_curve": true}
+T3_ace_start__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "buf": "start", "loss": "ace", "probe_curve": true}
+T3_er__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "probe_curve": true}
+T3_ace_start__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "buf": "start", "loss": "ace", "probe_curve": true}
+T1_er__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "curve_every": 5}
+T1_cmean__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "init": "cmean", "curve_every": 5}
+T1_warm__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "warm": 30, "curve_every": 5}
+T1_cmean_warm__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "init": "cmean", "warm": 30, "curve_every": 5}
+T1_uncentred_mean__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "init": "mean", "curve_every": 5}
+T1_er__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "curve_every": 5}
+T1_cmean__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "init": "cmean", "curve_every": 5}
+T1_warm__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "warm": 30, "curve_every": 5}
+T1_cmean_warm__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "init": "cmean", "warm": 30, "curve_every": 5}
+T1_uncentred_mean__toyB	{"data": "toy", "sep": 0.8, "nmem": 20, "rep": 8, "init": "mean", "curve_every": 5}
+T1_er__mnist	{"data": "mnist", "curve_every": 5}
+T1_cmean__mnist	{"data": "mnist", "init": "cmean", "curve_every": 5}
+T1_warm__mnist	{"data": "mnist", "warm": 30, "curve_every": 5}
+T1_cmean_warm__mnist	{"data": "mnist", "init": "cmean", "warm": 30, "curve_every": 5}
+T1_uncentred_mean__mnist	{"data": "mnist", "init": "mean", "curve_every": 5}
+T4_stale_l0.1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale", "lam": 0.1}
+T4_stale_avg_l0.1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale_avg", "lam": 0.1}
+T4_fresh_l0.1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "fresh", "lam": 0.1}
+T4_stale_l1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale", "lam": 1}
+T4_stale_avg_l1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale_avg", "lam": 1}
+T4_fresh_l1__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "fresh", "lam": 1}
+T4_stale_l10__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale", "lam": 10}
+T4_stale_avg_l10__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale_avg", "lam": 10}
+T4_fresh_l10__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "fresh", "lam": 10}
+T4_stale_l100__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale", "lam": 100}
+T4_stale_avg_l100__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "stale_avg", "lam": 100}
+T4_fresh_l100__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "ewc": "fresh", "lam": 100}
+T5_none__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "none"}
+T5_noop__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "noop"}
+T5_full__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "full"}
+T5_rows__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "rows"}
+T5_rows_wrong__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_wrong"}
+T5_rows_init__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_init"}
+T5_full_wrong__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "stream": [0, 1, 2, 3, 4, 0], "snap": "full_wrong"}
+T5_fresh__toyA	{"data": "toy", "sep": 0.6, "nmem": 5, "rep": 4, "fresh": true}
+T4_stale_l0.1__mnist	{"data": "mnist", "ewc": "stale", "lam": 0.1}
+T4_stale_avg_l0.1__mnist	{"data": "mnist", "ewc": "stale_avg", "lam": 0.1}
+T4_fresh_l0.1__mnist	{"data": "mnist", "ewc": "fresh", "lam": 0.1}
+T4_stale_l1__mnist	{"data": "mnist", "ewc": "stale", "lam": 1}
+T4_stale_avg_l1__mnist	{"data": "mnist", "ewc": "stale_avg", "lam": 1}
+T4_fresh_l1__mnist	{"data": "mnist", "ewc": "fresh", "lam": 1}
+T4_stale_l10__mnist	{"data": "mnist", "ewc": "stale", "lam": 10}
+T4_stale_avg_l10__mnist	{"data": "mnist", "ewc": "stale_avg", "lam": 10}
+T4_fresh_l10__mnist	{"data": "mnist", "ewc": "fresh", "lam": 10}
+T4_stale_l100__mnist	{"data": "mnist", "ewc": "stale", "lam": 100}
+T4_stale_avg_l100__mnist	{"data": "mnist", "ewc": "stale_avg", "lam": 100}
+T4_fresh_l100__mnist	{"data": "mnist", "ewc": "fresh", "lam": 100}
+T5_none__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "none"}
+T5_noop__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "noop"}
+T5_full__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "full"}
+T5_rows__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows"}
+T5_rows_wrong__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_wrong"}
+T5_rows_init__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "rows_init"}
+T5_full_wrong__mnist	{"data": "mnist", "stream": [0, 1, 2, 3, 4, 0], "snap": "full_wrong"}
+T5_fresh__mnist	{"data": "mnist", "fresh": true}
