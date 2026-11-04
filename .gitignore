@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+
+# Datasets and large run outputs are not stored in this repository.
+*.npz
+*.pt
+*.pth
+data/

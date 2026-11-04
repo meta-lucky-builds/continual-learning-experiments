@@ -1,0 +1,8 @@
+# Enough for scripts/check.py and the numpy-only experiments.
+numpy
+scikit-learn
+
+# Training runs and notebooks also need these; install the build that fits your machine.
+# torch
+# torchvision
+# scipy

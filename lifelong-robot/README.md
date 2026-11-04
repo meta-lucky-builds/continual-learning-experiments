@@ -14,9 +14,9 @@ Each file explains one test:
 Numbers cite the result files in the project's shared folder (paths like `research/...` are relative to `/mnt/project-files/`; that folder is not part of this repository). Explanations are tagged **[checked]** (shown by a result or audit file), **[inferred]** (our reasoning) or **[guess]**.
 
 ## The short answer
-**No idea of ours has yet beaten the strongest existing method under a pre-registered bar.**
+**No idea of ours has yet beaten the strongest existing method under a pre-registered bar.** One caveat: Test P's prior passed its rule against the competitor named for that test (0.24), but that competitor was slower than an isotropic learner with no practice, so most of the margin did not come from practice (file 02).
 
-Our ideas beat *classic* baselines several times, at toy or pilot level. Each time a tuned existing stack was in the race, the stack won.
+Our ideas beat *classic* baselines several times, at toy or pilot level. Each time the strongest existing stack was in the race, the stack won. In the T-CAUSE and T-P14D pilots that stack was itself untuned.
 
 All tests are small CPU toys, and three of them are pilots (1–8 seeds, untuned). Nothing has run on RoboJEPA or a GPU.
 
@@ -25,7 +25,7 @@ All tests are small CPU toys, and three of them are pilots (1–8 seeds, untuned
 | # | File | Test | Verdict |
 |---|---|---|---|
 | 01 | [01-test-M-misfit-writes.md](01-test-M-misfit-writes.md) | Do evidence-gated writes stop when the base model is wrong? | FAILED: bad writes grew about linearly |
-| 02 | [02-test-P-practice.md](02-test-P-practice.md) | Does a practice prior cover new task families? (first P14 test) | UNCLEAR; condition (L) failed in 0/20 seeds |
+| 02 | [02-test-P-practice.md](02-test-P-practice.md) | Does a practice prior cover new task families? (first P14 test) | UNCLEAR; condition (L) met in 0/20 seeds |
 | 03 | [03-T-COMPOSE.md](03-T-COMPOSE.md) | Predict never-seen mixes of known causes by inference | FAILED: 1.30× COIN's error (bar ≤0.25×) |
 | 04 | [04-T-CHURN.md](04-T-CHURN.md) | Do writes level off now, and is accuracy as good as LoRA + replay? | FAILED on accuracy; writes grow sub-linearly |
 | 05 | [05-T-P14-practice-prior.md](05-T-P14-practice-prior.md) | Does a learned practice prior make learning faster? | FAILED: slower than no prior and than Reptile |
