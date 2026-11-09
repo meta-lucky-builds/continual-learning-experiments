@@ -182,6 +182,12 @@ When this record was consolidated, the claims above were checked against the rep
 - Training runs were not re-executed, apart from the rerun noted in [`experiments/README.md`](experiments/README.md).
 - Claims about external papers were not checked against those papers.
 
+## Related work
+
+- Refitting the classifier to recover lost accuracy is not new: [Catastrophic Forgetting as Accessibility Collapse](https://arxiv.org/abs/2606.06032) (Trivedi and Melwani, 2026) reports it on CIFAR-100 with ResNet-18, and [On the Stability-Plasticity Dilemma of Class-Incremental Learning](https://arxiv.org/abs/2304.01663) (Kim and Han, 2023) uses classifier retraining as a diagnostic. Finding 1 replicates the idea at toy scale.
+- Correcting classifier bias towards new classes comes from [Large Scale Incremental Learning](https://arxiv.org/abs/1905.13260) (BiC, Wu et al., 2019). The comparison against a four-times-wider network is this repo's own test.
+- [Heads collapse, features stay](https://arxiv.org/abs/2512.07400) (Lanzillotta et al., 2025) reports the same split between collapsing heads and surviving features under replay.
+
 ## License
 
 [MIT](LICENSE). [`experiments/03-idea-b-write-credit/hay.py`](experiments/03-idea-b-write-credit/hay.py) copies MIT-licensed code from [JIBSIL/dualgoose](https://github.com/JIBSIL/dualgoose) (© 2026 Julian Boesch and Andrew Wee), as stated in its header.
