@@ -171,12 +171,12 @@ When this record was consolidated, the claims above were checked against the rep
 **Rechecked:**
 - Atlas self-tests pass in both `v1` and `v2b`, and both notebooks rebuild from `build.py` with identical content (with `PYTHONUTF8=1`; on Windows the only difference is line endings).
 - Experiment 03's lock-ins, validity checks and p-values recompute from its JSON files. The tables for experiments 01 and 02 match their JSON files.
-- Continual-learning headline numbers trace to saved results in `continual-learning/source/notes/`.
+- Continual-learning headline numbers trace to saved results in [`continual-learning/source/notes/`](continual-learning/source/notes/).
 
 **Corrected in the files:**
 - Experiment 03's layer-1 probe count was 9/10, not 8/10.
 - M2c logit ranges now match their source.
-- Summary wording in `lifelong-robot/` that rounded in the project's favour is fixed. For example, "tuned existing stack" described untuned pilot arms.
+- Summary wording in [`lifelong-robot/`](lifelong-robot/) that rounded in the project's favour is fixed. For example, "tuned existing stack" described untuned pilot arms.
 
 **Not rechecked:**
 - Training runs were not re-executed, apart from the rerun noted in [`experiments/README.md`](experiments/README.md).
@@ -184,4 +184,4 @@ When this record was consolidated, the claims above were checked against the rep
 
 ## License
 
-[MIT](LICENSE). `experiments/03-idea-b-write-credit/hay.py` copies MIT-licensed code from [JIBSIL/dualgoose](https://github.com/JIBSIL/dualgoose) (© 2026 Julian Boesch and Andrew Wee), as stated in its header.
+[MIT](LICENSE). [`experiments/03-idea-b-write-credit/hay.py`](experiments/03-idea-b-write-credit/hay.py) copies MIT-licensed code from [JIBSIL/dualgoose](https://github.com/JIBSIL/dualgoose) (© 2026 Julian Boesch and Andrew Wee), as stated in its header.
