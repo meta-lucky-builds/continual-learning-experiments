@@ -32,7 +32,7 @@ A star (\*) means |mean| > 2·SE across 5 seeds and all 5 seeds share the sign. 
 
 - Refitting only the last layer on replay's frozen features gives **70.6%**, against 41.5% for the network as trained and 73.5% for joint training ([toy](continual-learning/overview/03-m2c-diagnosis.md)).
 - On CIFAR-100, the encoder frozen at the first task scores 26.0 and the final encoder 35.3 when every encoder gets the same 480 items per class. Matched accuracy rose at every probed version, though the gain on task-0 classes alone was not significant ([A1](continual-learning/overview/11-audit-corrections.md)).
-- An earlier reading that features "decay" was wrong and was withdrawn. Readouts had been fitted on 21 to 480 items per class. An outside audit caught it.
+- An earlier reading that features "decay" was wrong and was withdrawn. Readouts had been fitted on 21 to 480 items per class. An audit of the evidence caught it.
 - On CIFAR-10, bias correction is worth +10.1\* more than making the network 4× wider ([T4](continual-learning/overview/09-sleep-tests.md)).
 
 ### 2. Reading around drift beat constraining the learner
